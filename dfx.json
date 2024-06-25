@@ -1,0 +1,27 @@
+{
+  "canisters": {
+    "Oxde_backend": {
+      "candid": "src/Oxde_backend/Oxde_backend.did",
+      "package": "Oxde_backend",
+      "type": "rust"
+    },
+    "Oxde_frontend": {
+      "dependencies": [
+        "Oxde_backend"
+      ],
+      "source": [
+        "src/Oxde_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "Oxde_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
